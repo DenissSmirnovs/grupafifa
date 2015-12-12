@@ -12,12 +12,11 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 </head>
-<body>
 
+<body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -34,8 +33,8 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li ><a href="http://localhost/fifa/index.php">Galvena</a></li>
-                <li><a href="#about">Galereja</a></li>
-                <li><a href="index/welcome/articles">Forums</a></li>
+                <li><a href="http://localhost/fifa/index.php/welcome/gallery">Galereja</a></li>
+                <li><a href="http://localhost/fifa/index.php/welcome/articles">Forums</a></li>
             </ul>
         </div>
     </div>
@@ -67,16 +66,30 @@
     <div class="jumbotron">
 <h3  align = "center">Autors: </h3>
 <p align = center> <?= $item['title']; ?></p>
-      
 <p align = center><p><?= $item['text'];  ?></p>	
-<form method="post" action="http://localhost/fifa/index.php/welcome/delete" align="center">
+
+<form method="get" action="update_comment" align="right">
+ <button type="submit" class="btn btn-info">Rediget komentaru</button> 
+ <input name="id" value="<?=$item['id'];?>" style="display:none;">
+ <textarea name = "title" style= "display:none;"><?=$item['title'];?> </textarea>
+ <textarea name = "text" style= "display:none;"><?=$item['text'];?> </textarea>
+    </form>	  
+	
+<form method="post" action="delete_comment" align="center">
     <button type="submit" class="btn btn-danger">Dzest komentaru</button>
+	<input name="id" value="<?=$item['id'];?>" style="display:none;">
     </form>	
-    </div>
+  
 </div>
   </div>
-
+</div>
 <?php endforeach;?>
+
+
+
+
+
+
 
 
 
@@ -92,33 +105,8 @@
     .form-group{
         
     }
-    .Box1 {
-        margin-top:300px;
-        width:500px;
-        height: 50px;
-        background-color: #78FF63;
-        position:relative;
-        border: 2px solid #D4D4D4;
-        border-radius: 10px;
-        box-shadow: 0 0 15px #A9A9A9;
-        padding:20px 40px;
-        left: 700px;
-        top: -335px;
-    }
-
-    .Box2 {
-        margin-top:50px;
-        width:500px;
-        height: 200px;
-        background-color: #FB7979;
-        position:relative;
-        border: 2px solid #D4D4D4;
-        border-radius: 10px;
-        box-shadow: 0 0 15px #A9A9A9;
-        padding:20px 40px;
-        left: 700px;
-        top: -335px;
-    }
+    
+    
     p{
         font-family: TimeNewRomans;
     }

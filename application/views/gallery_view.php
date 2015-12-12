@@ -4,37 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>FIFA 16</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="<?php echo base_url();?>/css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="<?php echo base_url();?>/css/style.css" type="text/css" />
-
-    <?php
-    $link = array(
-        'href' =>base_url().'css/style.css',
-        'type' => 'text/css',
-        'rel' => 'stylesheet',
-    );
-
-    ?>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
-<body >
 
-
+<body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -44,54 +26,76 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand logo"  href="http://localhost/fifa/index.php/welcome/">
+            <a class="navbar-brand logo" href="http://localhost/fifa/index.php/welcome/">
                 <img alt="Brand" src="http://www.fifa-16-generator.com/img/logo-fifa16-fr-WHITE.png">
             </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Galvena</a></li>
-                <li><a href="http://localhost/fifa/index.php/welcome/gallery"">Galereja</a></li>
+                <li ><a href="http://localhost/fifa/index.php">Galvena</a></li>
+                <li><a href="http://localhost/fifa/index.php/welcome/gallery">Galereja</a></li>
                 <li><a href="http://localhost/fifa/index.php/welcome/articles">Forums</a></li>
             </ul>
-        </div><!--/.nav-collapse -->
+        </div>
     </div>
 </nav>
 
-<!-- Test  -->
 
-<div class="container fon">
-    <div class="jumbotron">
 
-        <img src="http://i21.servimg.com/u/f21/19/32/96/45/fifa-113.jpg">
-        <p>FIFA 16 is an association football simulation video game developed by EA Canada and published by EA Sports for Microsoft Windows, PlayStation 3, PlayStation 4, Xbox 360, Xbox One, Android and iOS.</p>
-        <p>The game is the first in the FIFA series to include female players. It is also the first in which the players on the covers were chosen by popular vote, including the first women to appear on the cover. Martin Tyler and Alan Smith are the commentators for the game.</p>
-        <p>The game received generally positive reviews on its release in September 2015, with writers praising its realism.</p>
-        <p><a class="btn btn-primary btn-lg" href="https://en.wikipedia.org/wiki/FIFA_16" role="button">Izlasiet vairak</a></p>
-    </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <style>
-body {
+.autors{
+	color:white;
+	font-size:25px;
+}
+.otstup{
+	margin-top:50px;
+}
+
+    .form-group{
+        
+    }
+    
+    
+    p{
+        font-family: TimeNewRomans;
+    }
+    h3{
+        font-family: TimeNewRomans;
+
+    }
+	body {
     background-image: url("http://wallpapercave.com/wp/Kvnc4M8.jpg");
-}
-.jumbotron img{
-	margin-top:-15px;
-	margin-left:200px;
-}
-.logo{
+	background-repeat:no-repeat;
 	padding: 0px;
+margin: 0px;
+height:100%;
+width: 100%;
+background-attachment:fixed;
+	}
+.logo{
+
 	
 }
 .logo img{
 max-height: 36px;
 }
-</style>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.js"></script>
-<style>
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -3584,7 +3588,6 @@ fieldset[disabled] .btn-link:focus {
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
-  margin-left: 430px;
 }
 .btn-sm,
 .btn-group-sm > .btn {
@@ -5103,8 +5106,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
- background-color: rgba(255, 255, 255, 0.7);
- margin-top: 100px;
+  background-color: rgba(255,255,255,0.7);
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -5112,7 +5114,6 @@ a.badge:focus {
 }
 .jumbotron p {
   margin-bottom: 15px;
-  margin-top: 30px;
   font-size: 21px;
   font-weight: 200;
 }
@@ -6897,5 +6898,7 @@ button.close {
 /*# sourceMappingURL=bootstrap.css.map */
 
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>
