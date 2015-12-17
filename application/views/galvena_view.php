@@ -51,7 +51,7 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Galvena</a></li>
-                <li><a href="http://localhost/fifa/index.php/welcome/gallery"">Galereja</a></li>
+                
                 <li><a href="http://localhost/fifa/index.php/welcome/articles">Forums</a></li>
             </ul>
         </div><!--/.nav-collapse -->
